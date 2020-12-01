@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\BotController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ use App\Http\Controllers\ApiController;
 
 Route::get('/kalori',[ApiController::class,'cek_kalori']);
 Route::post('/kalori',[ApiController::class,'cek_kalori']);
+Route::get('/bot',[BotController::class,'index']);
+Route::post('/bot',[BotController::class,'index']);
